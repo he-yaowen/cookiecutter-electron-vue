@@ -1,0 +1,11 @@
+---
+productName: {{ cookiecutter.project_slug }}
+appId: {{ cookiecutter.project_slug }}
+files:
+    - dist/
+mac:
+    icon: resources/icons/app.png
+win:
+    icon: resources/icons/app.png
+linux:
+    icon: resources/icons/app.png

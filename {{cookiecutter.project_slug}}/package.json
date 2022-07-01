@@ -3,8 +3,9 @@
     "version": "{{ cookiecutter.project_version }}",
     "description": "{{ cookiecutter.project_description }}",
     "private": true,
+	"main": "dist/electron/index.js",
     "scripts": {
-        "build": "vite build",
+        "build": "vite build && electron-builder build",
         "dev": "vite",
         "lint": "npm run lint:eslint && npm run lint:markdownlint && npm run lint:stylelint",
         "lint:eslint": "eslint . --ext .ts",
